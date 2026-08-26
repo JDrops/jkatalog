@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="theme-color" content="#111111" />
+		<meta name="background-color" content="#EEEEEE" />
+		<link rel="manifest" href="/jkatalog/manifest.json" />
+		<link href="/jkatalog/_app/immutable/entry/start.Ced7d6qM.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/chunks/BDQlSmeP.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/chunks/DvsXRFXt.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/chunks/DdHKp5rh.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/entry/app.BKtB6myB.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/chunks/DuqgYnXA.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="/jkatalog/_app/immutable/nodes/0.CuSG-W__.js" rel="modulepreload">
+		
+		<link href="/jkatalog/_app/immutable/assets/0.DLQomdq7.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-bg text-text antialiased">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_14szx8f = {
+						base: "/jkatalog",
+						assets: "/jkatalog"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/jkatalog/_app/immutable/entry/start.Ced7d6qM.js"),
+						import("/jkatalog/_app/immutable/entry/app.BKtB6myB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/jkatalog/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

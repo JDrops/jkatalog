@@ -1,0 +1,13 @@
+{
+	"name": "JKatalog",
+	"short_name": "JKatalog",
+	"start_url": "/jkatalog/",
+	"scope": "/jkatalog/",
+	"display": "standalone",
+	"background_color": "#EEEEEE",
+	"theme_color": "#111111",
+	"icons": [
+		{ "src": "/jkatalog/icon-192.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/jkatalog/icon-512.png", "sizes": "512x512", "type": "image/png" }
+	]
+}
